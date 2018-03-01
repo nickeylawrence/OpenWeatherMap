@@ -89,7 +89,7 @@ def byGeography():
 	print("Weather forecast for 5 days with data every 3 hours by geographic coordinates")
 
 	# Make a get request with the parameters.
-	response = requests.get("http://pi.openweathermap.org/data/2.5/forecast?lat="+input_lat+"&lon="+input_lon+"&mode=json&APPID=8cb86f72f2f3bf797c62e81ed1caaf1e")
+	response = requests.get("http://api.openweathermap.org/data/2.5/forecast?lat="+input_lat+"&lon="+input_lon+"&mode=json&APPID=8cb86f72f2f3bf797c62e81ed1caaf1e")
 
 	if(response):
 		# Print the content of the response (the data the server returned)
